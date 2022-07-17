@@ -1,5 +1,7 @@
 package main
 
+import "time"
+
 func main() {
 
 	//x := 0
@@ -8,8 +10,9 @@ func main() {
 
 	for i := 0; i <= 100; i++ {
 
-		println(i)
+		go println(i)
 
 	}
 
+	time.Sleep(time.Second)
 }
